@@ -1,0 +1,27 @@
+.fixedHeader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    display: table;
+    height: 30px;
+    text-align: center;
+
+}
+.content{
+    margin: 0 auto;
+    padding: 30px 0;
+
+}
+
+.links{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}

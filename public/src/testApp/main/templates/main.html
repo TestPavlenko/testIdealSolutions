@@ -1,0 +1,6 @@
+<div>
+    <span class="links" ng-click="goToRepos()">Repositories List</span>
+    <span class="links" ng-click="goToFavorite ()">Favorite List</span>
+</div>
+<repos ng-if="!active" component={{component}}></repos>
+<favorite-list ng-if="active" favorite={{favorite}}></favorite-list>

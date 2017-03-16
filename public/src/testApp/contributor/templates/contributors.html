@@ -1,0 +1,7 @@
+<div style="text-decoration: underline; cursor: pointer" ng-click="back()">Back</div>
+<ul>
+    <li ng-repeat="contributor in contributorList | orderBy:'id'">
+        <img height="15px" ng-src="{{contributor.avatar_url}}">  <span style="color:blue;"> {{contributor.login}}</span> <span style="text-decoration: underline"> {{contributor.url}}</span>
+    </li>
+</ul>
+<div ng-if="dataNotAvailable">Data not available</div>

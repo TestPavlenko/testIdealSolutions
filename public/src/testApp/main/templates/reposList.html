@@ -1,0 +1,6 @@
+<ul>
+    <li ng-repeat="repos in reposList | orderBy:'id'">
+        <img height="15px" ng-src="{{repos.owner.avatar_url}}"> {{repos.id}}  <span>Favorite   <input ng-change="addToFavotite(repos)" type="checkbox" ng-model="repos['favorite']"></span>   {{repos.name}}  {{repos.description}} <span style="text-decoration: underline">{{repos.html_url}}</span> <span style="color:blue;">{{repos.owner.login}}</span>
+        <button ng-click="showContributor(repos.name, repos.owner.login)">Show contributor</button>
+    </li>
+</ul>
